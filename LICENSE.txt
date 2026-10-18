@@ -1,0 +1,22 @@
+MediaBack — Freeware License
+Copyright (c) 2026 pmewax. All rights reserved.
+
+You may download, install and use the unmodified MediaBack application free of
+charge, for personal or workplace use. Donations are voluntary and do not buy
+additional features or rights.
+
+The MediaBack source code is not offered under an open-source license and is not
+included in this public repository. Except where applicable law grants such rights,
+this license does not grant permission to redistribute modified builds, sell or
+repackage MediaBack, or use its name or logo to imply authorship or endorsement.
+Please link to the official GitHub release when sharing the application.
+
+Third-party components retain their own licenses. Nothing here restricts rights
+granted by those licenses. See THIRD-PARTY-NOTICES.txt.
+
+THE APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT
+PERMITTED BY APPLICABLE LAW. THE AUTHOR IS NOT LIABLE FOR DAMAGES ARISING FROM
+ITS USE, EXCEPT WHERE SUCH EXCLUSION IS NOT PERMITTED BY APPLICABLE LAW.
+
+For additional permissions, contact pmewax through the official GitHub repository:
+https://github.com/pmewax/MediaBack
