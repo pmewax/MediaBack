@@ -4,7 +4,9 @@
 
 **Громкость и музыка снова под рукой.** Бесплатная панель для Windows 11 в духе Windows 10: переключайте треки, меняйте громкость и настройте внешний вид под себя.
 
-### [↓ Скачать MediaBack 0.4.1 beta — Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.1-beta/MediaBack-Setup.msi)
+**Your volume and music, back within reach.** A free Windows 10-style volume and media flyout for **Windows 11 x64**. Control compatible media players, switch tracks without leaving a borderless game, and customize the position, themes, background and hotkeys. Close the settings and MediaBack keeps running in the background, with an optional tray icon. Requires a player that supports Windows Media Session; exclusive fullscreen support is limited.
+
+### [↓ Скачать / Download MediaBack 0.4.1 beta — Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.1-beta/MediaBack-Setup.msi)
 
 [Все выпуски](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать автора](DONATIONS.md) · [Сообщить об ошибке](https://github.com/pmewax/MediaBack/issues)
 
