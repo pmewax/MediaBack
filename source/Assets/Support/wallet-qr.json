@@ -1,0 +1,20 @@
+[
+  {
+    "Address": "TURJryLPSm91EeDJoAHN6bpGPrkLTJDAoc",
+    "Resource": "wallet-e66ea92abb24.png",
+    "Modules": 29,
+    "Sha256": "969ec41c4951e5dd9e8e33a29f3a64758ac760acea0aab4d7c6632aa07d9744e"
+  },
+  {
+    "Address": "0xC74F8B058e937007a40978808E073418dA1132fd",
+    "Resource": "wallet-7fafee6855e1.png",
+    "Modules": 29,
+    "Sha256": "11ad3469654acee41aabcb14caf641f8a7e1e87997a8409f2b4133d6b4695825"
+  },
+  {
+    "Address": "3pt1fwASJfbQtowHVzgB9bxEUrEpBFoN9SnqXuR99D2K",
+    "Resource": "wallet-502833df9d07.png",
+    "Modules": 33,
+    "Sha256": "ddbd88818b2b2fcc9933105bc6befa9a2ddd73d513b497a75e999626129b8ddb"
+  }
+]

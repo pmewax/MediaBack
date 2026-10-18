@@ -1,22 +1,29 @@
-MediaBack — Freeware License
+MediaBack - Freeware and Source Review License
 Copyright (c) 2026 pmewax. All rights reserved.
 
 You may download, install and use the unmodified MediaBack application free of
 charge, for personal or workplace use. Donations are voluntary and do not buy
 additional features or rights.
 
-The MediaBack source code is not offered under an open-source license and is not
-included in this public repository. Except where applicable law grants such rights,
-this license does not grant permission to redistribute modified builds, sell or
-repackage MediaBack, or use its name or logo to imply authorship or endorsement.
-Please link to the official GitHub release when sharing the application.
+The accompanying application source is made available for inspection, review and
+local verification. You may download it, build and run it locally for those
+purposes, and make local changes solely for testing or security analysis.
+This is a source-available license, not an open-source license.
+
+Except where applicable law or the hosting platform's applicable terms grant
+such rights, this license does not grant permission to redistribute source or
+modified builds, incorporate the code into another product, sell or repackage
+MediaBack, or use its name or logo to imply authorship or endorsement. Please
+link to the official GitHub repository or release when sharing the project.
+Any other permission requires the author's written consent.
 
 Third-party components retain their own licenses. Nothing here restricts rights
-granted by those licenses. See THIRD-PARTY-NOTICES.txt.
+granted by those licenses. See THIRD-PARTY-NOTICES.txt. Retain this license and
+applicable third-party notices with copies made under the permissions above.
 
-THE APPLICATION IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, TO THE EXTENT
-PERMITTED BY APPLICABLE LAW. THE AUTHOR IS NOT LIABLE FOR DAMAGES ARISING FROM
-ITS USE, EXCEPT WHERE SUCH EXCLUSION IS NOT PERMITTED BY APPLICABLE LAW.
+THE APPLICATION AND SOURCE ARE PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+TO THE EXTENT PERMITTED BY APPLICABLE LAW. THE AUTHOR IS NOT LIABLE FOR DAMAGES
+ARISING FROM THEIR USE, EXCEPT WHERE SUCH EXCLUSION IS NOT PERMITTED BY LAW.
 
-For additional permissions, contact pmewax through the official GitHub repository:
+For additional permissions, contact pmewax through the official repository:
 https://github.com/pmewax/MediaBack

@@ -10,7 +10,7 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 
 ### [↓ Скачать / Download 0.4.2 beta · Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.2-beta/MediaBack-Setup.msi)
 
-[Что нового / Release notes](https://github.com/pmewax/MediaBack/releases/tag/v0.4.2-beta) · [Все выпуски / All releases](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать / Support](DONATIONS.md) · [Ошибки / Issues](https://github.com/pmewax/MediaBack/issues)
+[Код / Source](source) · [Сборка / Build](README.txt) · [Что нового / Release notes](https://github.com/pmewax/MediaBack/releases/tag/v0.4.2-beta) · [Все выпуски / All releases](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать / Support](DONATIONS.md) · [Ошибки / Issues](https://github.com/pmewax/MediaBack/issues)
 
 ![MediaBack volume and media flyout](overlay-preview.png)
 
@@ -39,7 +39,7 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 
 ### Установка и обновление
 
-1. Скачайте **MediaBack-Setup.msi** по кнопке выше. Архивы GitHub **Source code** содержат материалы репозитория, а не приложение.
+1. Скачайте **MediaBack-Setup.msi** по кнопке выше. Для установки нужен MSI. Автоматические архивы GitHub **Source code** не являются установщиком; их состав зависит от тега.
 2. Запустите MSI. Для обновления с 0.4.1 используйте новый MSI: сохранение настроек проверено.
 3. Выберите язык и внешний вид, затем закройте настройки — панель продолжит работать.
 4. Клавиша громкости или **Ctrl + Alt + V** показывает обычную панель без переключения активного окна.
@@ -66,6 +66,14 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 MSI **не подписан сертификатом издателя**. Windows может показать предупреждение: проверяйте источник и SHA-256 из релиза, не отключайте защиту Windows. 169 автоматических проверок прошли; Microsoft Defender не обнаружил угроз в финальном MSI. Это не заменяет независимый аудит. [Проверки и ограничения](SECURITY.md).
 
 Приложение работает локально, без учётной записи, рекламы, телеметрии и передачи музыки на сервер. Использует Windows Media Session и Core Audio. [Приватность](PRIVACY.md). Программа использует память и процессорное время; нулевая нагрузка не обещается.
+
+### Исходники и проверка
+
+Код версии 0.4.2 доступен для изучения прямо в [source](source). [Инструкция по сборке](README.txt), [результаты проверок](VALIDATION.txt) и [контрольные суммы исходного комплекта](SHA256-SOURCE.txt) находятся в корне репозитория.
+
+Для сборки нужны Windows x64 и .NET SDK 10.0.401 или совместимая версия .NET 10. Из корня репозитория запустите `./build.ps1` в PowerShell. Скрипт собирает приложение и MSI; установка автоматически не запускается.
+
+Код предоставлен для просмотра, локальной сборки и проверки на условиях [LICENSE.txt](LICENSE.txt). Это **source available**, а не open source: права на распространение изменённых сборок не предоставляются. Публикация кода не заменяет независимый аудит; побайтная воспроизводимость релизного EXE не заявляется.
 
 ### ♡ Поддержать автора
 
@@ -94,7 +102,7 @@ MSI **не подписан сертификатом издателя**. Windows
 
 ### Install or update
 
-1. Download **MediaBack-Setup.msi** using the link above. GitHub's automatic **Source code** archives contain repository materials, not the application.
+1. Download **MediaBack-Setup.msi** using the link above. GitHub's automatic **Source code** archives are not installers; their contents depend on the tag. Use the MSI to install.
 2. Run the MSI. Updating from 0.4.1 with existing settings has been tested.
 3. Choose **English · EN** at the top of the sidebar and customize the flyout. Closing settings keeps MediaBack running.
 4. Press a volume key or **Ctrl + Alt + V** to show the regular flyout without changing the active window.
@@ -122,12 +130,20 @@ The MSI is **not digitally signed by a publisher certificate**. Windows may show
 
 MediaBack works locally without an account, ads, telemetry or uploading music. It uses Windows Media Session and Core Audio. [Privacy](PRIVACY.md). It uses memory and CPU time; zero resource usage is not promised.
 
+### Source and verification
+
+Browse the 0.4.2 application code in [source](source). The repository includes [build instructions](README.txt), [verification results](VALIDATION.txt) and [source-package file hashes](SHA256-SOURCE.txt).
+
+Build on Windows x64 with .NET SDK 10.0.401 or a compatible .NET 10 version. Run `./build.ps1` from the repository root in PowerShell. It builds the app and MSI without automatically installing them.
+
+Source is provided for inspection, local builds and verification under [LICENSE.txt](LICENSE.txt). This is **source available**, not open source; permission to redistribute modified builds is not granted. Public source does not replace an independent audit, and the release EXE is not claimed to be reproducible byte for byte.
+
 ### ♡ Support the author
 
 All features are free. If MediaBack makes your day a little easier, you can support its development voluntarily: **[coins, networks and addresses →](DONATIONS.md)**. The same addresses and QR codes are available in settings. Thank you for your support, ideas and feedback!
 
 ## Автор и права / Author and rights
 
-By [pmewax](https://github.com/pmewax). Бесплатное приложение с закрытыми исходниками / freeware with closed source. This repository contains documentation, screenshots and installable releases; the application's source code is not included.
+By [pmewax](https://github.com/pmewax). Бесплатное приложение с исходниками для изучения / freeware with source available for review. Application code, resources and build scripts are available in this repository under the source review terms below.
 
 [Условия / License](LICENSE.txt) · [Сторонние компоненты / Third-party notices](THIRD-PARTY-NOTICES.txt). Неофициальный проект / an unofficial project, not affiliated with Microsoft, Spotify, SoundCloud or other mentioned services. Screenshots use demonstration data.

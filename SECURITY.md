@@ -27,3 +27,9 @@
 - **The MSI is not signed by a publisher certificate.** A separate SHA-256 file is attached to the release.
 
 Not all HID devices, monitor/DPI configurations, players or fullscreen games have been tested. Report bugs in Issues without passwords, tokens, personal data or private logs. For a potential vulnerability, start with a brief description that contains no secrets.
+
+## Исходный код / Source review
+
+Код 0.4.2 доступен в [source](source), сборка описана в [README.txt](README.txt). Подготовленная копия прошла все 169 встроенных проверок; локальные журналы с информацией о плеерах не опубликованы. Контрольные суммы файлов: [SHA256-SOURCE.txt](SHA256-SOURCE.txt).
+
+The 0.4.2 source is available in [source](source), with build instructions in [README.txt](README.txt). The prepared source passed all 169 built-in checks. Logs containing real player information are excluded. File hashes: [SHA256-SOURCE.txt](SHA256-SOURCE.txt). Source review terms are in [LICENSE.txt](LICENSE.txt).

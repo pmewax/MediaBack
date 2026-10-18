@@ -1,0 +1,42 @@
+MediaBack 0.4.2 - verification
+
+RU
+
+Приложение и MSI собраны из этих исходников на Windows x64.
+Встроенные проверки: 169 успешно, ошибок 0.
+Переводы: 221 ключ RU/EN, 216 ссылок, параметры совпадают.
+После удаления комментариев Roslyn подтвердил эквивалентность синтаксиса
+всех 41 C#-файлов оригиналу версии 0.4.2. Python проверен разбором AST;
+PowerShell и XML также прошли синтаксический разбор.
+
+Нормализация переносов строк и документы сборки не означают побайтную
+воспроизводимость готового EXE. Проверочные журналы с данными о реальных
+плеерах не входят в репозиторий.
+
+Проверка состава и поиск распространённых шаблонов секретов не нашли
+приватных токенов, ключей, профилей или личных путей. Публичные адреса
+поддержки и уведомления о сторонних лицензиях сохранены.
+
+Это функциональные проверки и проверка состава, а не независимый аудит
+безопасности. Они не гарантируют отсутствие всех ошибок и уязвимостей.
+MSI релиза не подписан сертификатом издателя.
+
+EN
+
+The application and MSI were built from this source on Windows x64.
+Built-in checks: 169 passed, zero failures.
+Localization: 221 RU/EN keys, 216 references, matching placeholders.
+Roslyn confirmed equivalent syntax for all 41 C# files after comment removal.
+Python was checked using its AST; PowerShell and XML were also parsed.
+
+Newline normalization and packaging documents do not establish byte-for-byte
+reproducibility of the released EXE. Test logs containing real player information
+are excluded.
+
+File checks and common-secret pattern scans found no private tokens, keys,
+profiles or personal paths. Public donation addresses and third-party notices
+are retained.
+
+These are functional and packaging checks, not an independent security audit
+or a guarantee against all bugs or vulnerabilities. The release MSI is not
+signed by a publisher certificate.
