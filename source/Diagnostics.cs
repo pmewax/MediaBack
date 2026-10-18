@@ -25,6 +25,7 @@ internal static partial class Diagnostics
         void Check(string name, bool passed) { checks.Add(new { name, passed }); if (!passed) failed++; }
         try
         {
+            await RunArtworkChecksAsync(Check);
             static MediaItem Item(string id, bool playing = true, bool music = true, bool known = false) => new(id, id, "Track", "Artist", playing, music, known, true, true, true, TimeSpan.Zero, TimeSpan.FromMinutes(3));
             var music = Item("spotify.exe", known: true); var game = Item("game.exe", music: false); var video = Item("browser.exe", music: false);
             var settings = new Settings();
@@ -135,6 +136,7 @@ internal static partial class Diagnostics
             using var fakeAudio = new TestAudio();
             var overlaySettings = new Settings();
             var overlay = new OverlayWindow(fakeAudio, overlaySettings);
+            RunTooltipChecks(window, overlay, Check);
             overlay.Update(music);
             Check("State update does not show a hidden overlay", !overlay.IsVisible);
             overlay.Reveal(true); overlay.UpdateLayout();

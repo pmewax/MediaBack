@@ -1,4 +1,5 @@
 using System.Globalization;
+using System.Windows.Automation;
 using System.IO;
 using System.Windows;
 using System.Windows.Controls;
@@ -151,7 +152,7 @@ public partial class SettingsWindow : Window
         var hex = AccentHexBox.Text.Trim();
         var valid = System.Text.RegularExpressions.Regex.IsMatch(hex, "^#[0-9a-fA-F]{6}$");
         AccentHexBox.BorderBrush = new SolidColorBrush(valid ? Color.FromRgb(56, 71, 93) : Color.FromRgb(224, 139, 139));
-        AccentHexBox.ToolTip = valid ? L.Get("HexExample") : L.Get("HexError");
+        AutomationProperties.SetHelpText(AccentHexBox, valid ? "" : L.Get("HexError"));
         if (valid) settings.Accent = hex;
         UpdateLabels(); SettingsChanged?.Invoke();
     }
@@ -178,7 +179,7 @@ public partial class SettingsWindow : Window
         PageTitle.Text = L.Get(new[] { "Appearance", "Position", "Music", "Controls", "Support" }[currentPage]);
         PageSubtitle.Text = L.Get(new[] { "AppearanceSubtitle", "PositionSubtitle", "MusicSubtitle", "ControlsSubtitle", "SupportSubtitle" }[currentPage]);
         CoordinateHint.Text = L.Get("CoordinateHint");
-        AccentHexBox.ToolTip = System.Text.RegularExpressions.Regex.IsMatch(AccentHexBox.Text.Trim(), "^#[0-9a-fA-F]{6}$") ? L.Get("HexExample") : L.Get("HexError");
+        AutomationProperties.SetHelpText(AccentHexBox, System.Text.RegularExpressions.Regex.IsMatch(AccentHexBox.Text.Trim(), "^#[0-9a-fA-F]{6}$") ? "" : L.Get("HexError"));
         NoticeText.Text = ""; apiError = null; sourcesKey = "";
         UpdateSources(lastSources, lastSelected, null, lastAudioAvailable);
         UpdateShortcutStatus(null);

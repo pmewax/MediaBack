@@ -1,4 +1,5 @@
 using System.Windows;
+using System.Windows.Controls;
 using MediaBack.Application;
 using MediaBack.Domain;
 using MediaBack.Infrastructure;
@@ -8,6 +9,7 @@ namespace MediaBack;
 
 public partial class App : System.Windows.Application
 {
+    static App() => ToolTipService.IsEnabledProperty.OverrideMetadata(typeof(FrameworkElement), new FrameworkPropertyMetadata(false));
     private SingleInstance? instance;
     private ApplicationController? controller;
     private SettingsStore? store;

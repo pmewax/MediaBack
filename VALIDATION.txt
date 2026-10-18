@@ -1,42 +1,59 @@
-MediaBack 0.4.2 - verification
+MediaBack 0.4.3 - local verification / локальная проверка
 
 RU
 
-Приложение и MSI собраны из этих исходников на Windows x64.
-Встроенные проверки: 169 успешно, ошибок 0.
-Переводы: 221 ключ RU/EN, 216 ссылок, параметры совпадают.
-После удаления комментариев Roslyn подтвердил эквивалентность синтаксиса
-всех 41 C#-файлов оригиналу версии 0.4.2. Python проверен разбором AST;
-PowerShell и XML также прошли синтаксический разбор.
+Исправлены обновление обложки без смены названия, отмена устаревших чтений,
+очистка старого изображения перед загрузкой нового и ограниченные повторные
+чтения задержанной обложки. Кэш изолирован по экземплярам медиасессий.
+Постоянного частого опроса нет: три повтора после смены трека и прежняя
+минутная проверка состояния. Одинаковые изображения переиспользуются.
 
-Нормализация переносов строк и документы сборки не означают побайтную
-воспроизводимость готового EXE. Проверочные журналы с данными о реальных
-плеерах не входят в репозиторий.
+Всплывающие подсказки удалены с панели, настроек и диалогов. Названия
+элементов для экранного диктора и сведения об ошибке цвета сохранены.
 
-Проверка состава и поиск распространённых шаблонов секретов не нашли
-приватных токенов, ключей, профилей или личных путей. Публичные адреса
-поддержки и уведомления о сторонних лицензиях сохранены.
+26 новых проверок прошли. В общем прогоне 190 успешных проверок и пять
+сбоев тестов получения фокуса Windows. Те же пять сбоев воспроизвелись
+на неизменённой 0.4.2 в этой среде. Игровой код в обновлении не менялся;
+полностью пройденный тест фокуса здесь не заявляется.
 
-Это функциональные проверки и проверка состава, а не независимый аудит
-безопасности. Они не гарантируют отсутствие всех ошибок и уязвимостей.
-MSI релиза не подписан сертификатом издателя.
+Переводы: 221 ключ RU/EN, 210 используемых ссылок, параметры совпадают.
+Сборка приложения и MSI завершилась успешно. Установщик проверен Microsoft
+Defender: угроз не обнаружено. Это не независимый аудит безопасности.
+
+Проверка задержанных обложек использует управляемые последовательности
+метаданных/изображений, быстрые смены трека, отмену чтения из другого потока,
+отсутствующую картинку и одинаковые обложки альбома. Реальное воспроизведение
+пользователя тестом не переключалось. Если сам плеер не отдаёт актуальную
+обложку Windows, приложение не может восстановить её из названия трека.
+
+Проверено обновление установленной 0.4.2 до 0.4.3: код MSI 0, EXE совпал
+с проверенной сборкой, файл пользовательских настроек не изменился.
+Приложение запущено обратно в фоне. Полное удаление/переустановка 0.4.3
+не выполнялись. Подпись издателя отсутствует.
 
 EN
 
-The application and MSI were built from this source on Windows x64.
-Built-in checks: 169 passed, zero failures.
-Localization: 221 RU/EN keys, 216 references, matching placeholders.
-Roslyn confirmed equivalent syntax for all 41 C# files after comment removal.
-Python was checked using its AST; PowerShell and XML were also parsed.
+Fixed artwork-only updates, obsolete async reads, previous-track image reuse
+and delayed thumbnail refresh. Artwork state is isolated per media-session
+instance. Three bounded follow-ups run around track changes; the existing
+minute watchdog remains. Matching decoded images are reused.
 
-Newline normalization and packaging documents do not establish byte-for-byte
-reproducibility of the released EXE. Test logs containing real player information
-are excluded.
+Hover tooltips were removed from the flyout, settings and dialogs. Accessibility
+names and color-validation help for screen readers remain available.
 
-File checks and common-secret pattern scans found no private tokens, keys,
-profiles or personal paths. Public donation addresses and third-party notices
-are retained.
+All 26 new checks passed. The full run had 190 passing checks and five
+foreground-focus test failures, reproduced unchanged on 0.4.2 in this environment.
+Game interaction code was not modified. A fully passing focus test is not claimed.
 
-These are functional and packaging checks, not an independent security audit
-or a guarantee against all bugs or vulnerabilities. The release MSI is not
-signed by a publisher certificate.
+Localization: 221 RU/EN keys, 210 references, matching placeholders.
+Application and MSI builds succeeded. Microsoft Defender found no threats in
+the installer. This is not an independent security audit.
+
+Artwork tests use controlled delayed image/metadata sequences, rapid skips,
+background-thread cancellation, missing images and shared album art. They do
+not switch the user's current playback. If a player does not supply the current
+image to Windows, the app cannot reconstruct it from the track title.
+
+The installed 0.4.2 to 0.4.3 upgrade succeeded; the installed EXE matched the
+tested build and the settings file was unchanged. Background operation resumed.
+A full uninstall/reinstall was not performed. The MSI is unsigned.

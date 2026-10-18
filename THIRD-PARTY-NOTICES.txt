@@ -1,4 +1,4 @@
-MediaBack 0.4.2 bundles Microsoft .NET 10.0.13 and Windows Desktop Runtime for win-x64. The following texts are reproduced from the distributed runtime packages. Third-party rights are not limited by the MediaBack freeware license.
+MediaBack 0.4.3 bundles Microsoft .NET 10.0.13 and Windows Desktop Runtime for win-x64. The following texts are reproduced from the distributed runtime packages. Third-party rights are not limited by the MediaBack freeware license.
 
 ===== .NET Runtime LICENSE =====
 

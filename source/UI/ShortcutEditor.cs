@@ -31,13 +31,14 @@ public sealed class ShortcutEditor : Grid
         enabled = new CheckBox { Content = QuickCommandNames.For(command), IsChecked = binding.Enabled, VerticalAlignment = VerticalAlignment.Center, Margin = new Thickness(0, 0, 16, 0) };
         enabled.Click += (_, _) => { this.binding = this.binding with { Enabled = enabled.IsChecked == true }; Changed?.Invoke(); };
         Children.Add(enabled);
-        recorder = new Button { MinHeight = 40, Padding = new Thickness(10, 8, 10, 8), FontSize = 12, ToolTip = L.Get("RecordHint") };
+        recorder = new Button { MinHeight = 40, Padding = new Thickness(10, 8, 10, 8), FontSize = 12 };
         SetColumn(recorder, 1); Children.Add(recorder);
         AutomationProperties.SetName(recorder, L.Get("ShortcutPrefix") + QuickCommandNames.For(command));
         recorder.Click += (_, _) => { if (IsRecording) CancelRecording(); else BeginRecording(); };
         recorder.PreviewKeyDown += CaptureKey;
         recorder.LostKeyboardFocus += (_, _) => CancelRecording();
-        var clear = new Button { Content = "×", ToolTip = L.Get("ClearShortcut"), FontSize = 18, Padding = new Thickness(0), Margin = new Thickness(6, 0, 0, 0), MinHeight = 40 };
+        var clear = new Button { Content = "×", FontSize = 18, Padding = new Thickness(0), Margin = new Thickness(6, 0, 0, 0), MinHeight = 40 };
+        AutomationProperties.SetName(clear, L.Get("ClearShortcut"));
         clear.Click += (_, _) => { CancelRecording(); this.binding = this.binding with { Key = 0 }; Refresh(); Changed?.Invoke(); };
         SetColumn(clear, 2); Children.Add(clear);
         error = new TextBlock { Foreground = new SolidColorBrush(Color.FromRgb(244, 167, 177)), FontSize = 11, TextWrapping = TextWrapping.Wrap, Margin = new Thickness(0, 6, 0, 0), Visibility = Visibility.Collapsed };

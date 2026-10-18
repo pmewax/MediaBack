@@ -26,7 +26,7 @@
     <Grid.ColumnDefinitions><ColumnDefinition Width="80"/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
     <Grid Margin="15,12,15,11">
      <Grid.RowDefinitions><RowDefinition Height="26"/><RowDefinition Height="*"/><RowDefinition x:Name="NumberRow" Height="28"/></Grid.RowDefinitions>
-     <Button x:Name="MuteButton" Style="{StaticResource GlyphButton}" Content="&#xE767;" Width="32" Height="26" Click="MuteClicked" ToolTip="{DynamicResource Loc.ToggleMute}" AutomationProperties.Name="{DynamicResource Loc.Mute}"/>
+     <Button x:Name="MuteButton" Style="{StaticResource GlyphButton}" Content="&#xE767;" Width="32" Height="26" Click="MuteClicked" AutomationProperties.Name="{DynamicResource Loc.Mute}"/>
      <Slider x:Name="VolumeSlider" Grid.Row="1" Style="{StaticResource VolumeSlider}" ValueChanged="VolumeChanged" Margin="0,7,0,8" AutomationProperties.Name="{DynamicResource Loc.MasterVolume}"/>
      <TextBlock x:Name="VolumeText" Grid.Row="2" Text="50" FontSize="20" FontWeight="Light" HorizontalAlignment="Center" VerticalAlignment="Center"/>
     </Grid>
@@ -39,9 +39,9 @@
        <StackPanel Grid.Column="1" VerticalAlignment="Center"><TextBlock x:Name="TitleText" Text="{DynamicResource Loc.TrackTitle}" FontSize="16" FontWeight="SemiBold" TextTrimming="CharacterEllipsis"/><TextBlock x:Name="ArtistText" Text="{DynamicResource Loc.Artist}" Foreground="#B9BEC7" FontSize="12" Margin="0,5,0,0" TextTrimming="CharacterEllipsis"/></StackPanel>
       </Grid>
       <StackPanel x:Name="ControlsPanel" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,3,0,0">
-       <Button x:Name="PreviousButton" Style="{StaticResource GlyphButton}" Content="&#xE892;" ToolTip="{DynamicResource Loc.PreviousTrack}" AutomationProperties.Name="{DynamicResource Loc.PreviousTrack}" Click="PreviousClicked"/>
-       <Button x:Name="PlayButton" Style="{StaticResource GlyphButton}" Content="&#xE769;" Margin="12,0" ToolTip="{DynamicResource Loc.PlayPause}" AutomationProperties.Name="{DynamicResource Loc.PlayPauseName}" Click="PlayClicked"/>
-       <Button x:Name="NextButton" Style="{StaticResource GlyphButton}" Content="&#xE893;" ToolTip="{DynamicResource Loc.NextTrack}" AutomationProperties.Name="{DynamicResource Loc.NextTrack}" Click="NextClicked"/>
+       <Button x:Name="PreviousButton" Style="{StaticResource GlyphButton}" Content="&#xE892;" AutomationProperties.Name="{DynamicResource Loc.PreviousTrack}" Click="PreviousClicked"/>
+       <Button x:Name="PlayButton" Style="{StaticResource GlyphButton}" Content="&#xE769;" Margin="12,0" AutomationProperties.Name="{DynamicResource Loc.PlayPauseName}" Click="PlayClicked"/>
+       <Button x:Name="NextButton" Style="{StaticResource GlyphButton}" Content="&#xE893;" AutomationProperties.Name="{DynamicResource Loc.NextTrack}" Click="NextClicked"/>
       </StackPanel>
      </Grid>
     </Border>

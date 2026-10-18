@@ -1,6 +1,6 @@
 # Приватность MediaBack
 
-MediaBack 0.4.2 работает локально. В коде приложения нет телеметрии, рекламных SDK, учётных записей, сетевого сервиса или автоматической отправки отчётов.
+MediaBack 0.4.3 работает локально. В коде приложения нет телеметрии, рекламных SDK, учётных записей, сетевого сервиса или автоматической отправки отчётов.
 
 Для показа музыки приложение читает метаданные и обложку системных Windows Media Session и отправляет выбранному плееру команды управления. Громкость и устройства доступны через Windows Core Audio. Сам плеер может обращаться в интернет по своим правилам.
 
@@ -16,7 +16,7 @@ MediaBack 0.4.2 работает локально. В коде приложен�
 
 ## English — MediaBack privacy
 
-MediaBack 0.4.2 works locally. The application has no telemetry, advertising SDKs, user accounts, network service or automatic report submission.
+MediaBack 0.4.3 works locally. The application has no telemetry, advertising SDKs, user accounts, network service or automatic report submission.
 
 It reads track metadata and artwork from Windows Media Session and sends playback commands to your selected player. Volume and audio devices use Windows Core Audio. The player itself may access the internet under its own policies.
 

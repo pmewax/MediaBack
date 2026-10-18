@@ -65,9 +65,9 @@ public partial class OverlayWindow : Window
         MediaPanel.Visibility = current == null ? Visibility.Collapsed : Visibility.Visible;
         GameHint.Text = current == null ? "Esc" : L.Get("GameModeActive");
         GameHint.MaxWidth = (current == null ? 80 : 80 + settings.MediaWidth) - 32;
-        if (current == null) return;
+        if (current == null) { Cover.Source = null; return; }
         SourceText.Text = MediaSourceLabel.For(current, settings).ToUpperInvariant();
-        TitleText.Text = L.MediaTitle(current.Title); TitleText.ToolTip = TitleText.Text;
+        TitleText.Text = L.MediaTitle(current.Title);
         ArtistText.Text = current.Artist;
         if (!ReferenceEquals(Cover.Source, current.Artwork)) Cover.Source = current.Artwork;
         PlayButton.Content = current.Playing ? "\uE769" : "\uE768";

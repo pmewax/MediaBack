@@ -34,9 +34,9 @@
   <Grid>
    <Grid.RowDefinitions><RowDefinition Height="Auto"/><RowDefinition Height="*"/><RowDefinition Height="Auto"/></Grid.RowDefinitions>
    <Grid Margin="24,22,22,0"><Grid.ColumnDefinitions><ColumnDefinition Width="Auto"/><ColumnDefinition/><ColumnDefinition Width="Auto"/></Grid.ColumnDefinitions>
-    <Button x:Name="BackButton" Click="BackClicked" Width="36" Height="36" MinHeight="0" Padding="0" Visibility="Collapsed" Background="#1E3048" Margin="0,0,12,0" ToolTip="{DynamicResource Loc.Back}" AutomationProperties.Name="{DynamicResource Loc.Back}"><Path Width="13" Height="13" Data="M 8,0 L 1,6 L 8,12 M 1,6 L 14,6" Stretch="Uniform" Stroke="#C7DBF5" StrokeThickness="1.6" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Button>
+    <Button x:Name="BackButton" Click="BackClicked" Width="36" Height="36" MinHeight="0" Padding="0" Visibility="Collapsed" Background="#1E3048" Margin="0,0,12,0" AutomationProperties.Name="{DynamicResource Loc.Back}"><Path Width="13" Height="13" Data="M 8,0 L 1,6 L 8,12 M 1,6 L 14,6" Stretch="Uniform" Stroke="#C7DBF5" StrokeThickness="1.6" StrokeStartLineCap="Round" StrokeEndLineCap="Round"/></Button>
     <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center"><Image Source="/Assets/MediaBack.png" Width="26" Height="26" Margin="0,0,10,0"/><StackPanel><TextBlock Text="MediaBack" FontSize="14" FontWeight="SemiBold"/><TextBlock Text="{DynamicResource Loc.MadeWithLove}" FontSize="8" Foreground="#88A2C2" Margin="0,3,0,0"/></StackPanel></StackPanel>
-    <Button x:Name="CloseDialogButton" Grid.Column="2" Style="{StaticResource CloseButton}" Click="CloseClicked" ToolTip="{DynamicResource Loc.Close}" AutomationProperties.Name="{DynamicResource Loc.CloseSupport}"/>
+    <Button x:Name="CloseDialogButton" Grid.Column="2" Style="{StaticResource CloseButton}" Click="CloseClicked" AutomationProperties.Name="{DynamicResource Loc.CloseSupport}"/>
    </Grid>
    <ScrollViewer x:Name="DialogScroll" Grid.Row="1" VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Disabled" Margin="0,0,4,0">
     <StackPanel x:Name="PageBody" Margin="28,24,24,0">

@@ -1,4 +1,10 @@
-MediaBack 0.4.2
+MediaBack 0.4.3 — исправления / fixes
+
+Обложка перечитывается при обновлении медиаданных, даже когда название не изменилось. Запоздавшие загрузки отменяются; старая картинка не переносится на новый трек. Для задержанных картинок есть три ограниченных повтора. Всплывающие подсказки панели и настроек удалены.
+
+Artwork is refreshed on media-property changes, including artwork-only updates. Obsolete reads are cancelled; a previous track's image is cleared. Three bounded follow-ups handle delayed images. Flyout and settings hover tooltips are removed.
+
+MediaBack 0.4.3
 
 RU - Сборка и проверка
 

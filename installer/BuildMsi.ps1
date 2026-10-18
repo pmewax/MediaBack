@@ -84,10 +84,10 @@ try {
   Table AppSearch @('Property CHAR(72) NOT NULL','Signature_ CHAR(72) NOT NULL') @('Property','Signature_')
   Table RegLocator @('Signature_ CHAR(72) NOT NULL','Root SHORT NOT NULL','Key CHAR(255) NOT NULL','Name CHAR(255)','Type SHORT') @('Signature_')
   Table Signature @('Signature CHAR(72) NOT NULL','FileName CHAR(255) NOT NULL','MinVersion CHAR(20)','MaxVersion CHAR(20)','MinSize LONG','MaxSize LONG','MinDate LONG','MaxDate LONG','Languages CHAR(255)') @('Signature')
-  $productCode = '{5C1682BD-BBEA-4139-82F4-474998EF7633}'
+  $productCode = '{3378CC73-39DF-4D67-B586-A73A44AE20C5}'
   $upgradeCode = '{735086F8-3C52-47C0-9BE4-72889DD9A3F1}'
   $props = @{
-    ProductCode=$productCode; UpgradeCode=$upgradeCode; ProductName='MediaBack'; ProductVersion='0.4.2'; ProductLanguage='1049'; Manufacturer='MediaBack';
+    ProductCode=$productCode; UpgradeCode=$upgradeCode; ProductName='MediaBack'; ProductVersion='0.4.3'; ProductLanguage='1049'; Manufacturer='MediaBack';
     ARPPRODUCTICON='MediaBackIcon'; ARPNOMODIFY='1'; ALLUSERS='2'; MSIINSTALLPERUSER='1'; SecureCustomProperties='OLDPRODUCTS;NEWERVERSIONDETECTED'
   }
   foreach ($name in $props.Keys) { Row Property @($name,$props[$name]) }
@@ -105,7 +105,7 @@ try {
   Row Component @('MenuShortcuts','{EAE80613-F0D4-4ED7-A17B-AF71C630398D}','MenuFolder',260,$null,'RegShortcuts')
   Row Feature @('MainFeature',$null,'MediaBack','Громкость и музыка',1,1,'INSTALLFOLDER',0)
   foreach ($component in @('ApplicationFiles','AutoStart','MenuShortcuts')) { Row FeatureComponents @('MainFeature',$component) }
-  Row File @('MainExe','ApplicationFiles','MEDIAB~1.EXE|MediaBack.exe',[int](Get-Item -LiteralPath $app).Length,'0.4.2.0','0',16896,1)
+  Row File @('MainExe','ApplicationFiles','MEDIAB~1.EXE|MediaBack.exe',[int](Get-Item -LiteralPath $app).Length,'0.4.3.0','0',16896,1)
   Row File @('Readme','ApplicationFiles','README.txt',[int](Get-Item -LiteralPath $readme).Length,$null,$null,16896,2)
   Row File @('License','ApplicationFiles','LICENSE.txt',[int](Get-Item -LiteralPath $license).Length,$null,$null,16896,3)
   Row File @('Notices','ApplicationFiles','THIRD~1.TXT|THIRD-PARTY-NOTICES.txt',[int](Get-Item -LiteralPath $notices).Length,$null,$null,16896,4)
@@ -118,8 +118,8 @@ try {
   Row Shortcut @('UninstallShortcut','MenuFolder','UNINST~1|Удалить - Uninstall MediaBack','MenuShortcuts','[SystemFolder]msiexec.exe','/x [ProductCode]','Удалить / Uninstall MediaBack',$null,'MediaBackIcon',0,1,'INSTALLFOLDER')
   Row RemoveFile @('RemoveAppFolder','ApplicationFiles',$null,'INSTALLFOLDER',2)
   Row RemoveFile @('RemoveMenuFolder','MenuShortcuts',$null,'MenuFolder',2)
-  Row Upgrade @($upgradeCode,$null,'0.4.2',$null,513,$null,'OLDPRODUCTS')
-  Row Upgrade @($upgradeCode,'0.4.2',$null,$null,2,$null,'NEWERVERSIONDETECTED')
+  Row Upgrade @($upgradeCode,$null,'0.4.3',$null,513,$null,'OLDPRODUCTS')
+  Row Upgrade @($upgradeCode,'0.4.3',$null,$null,2,$null,'NEWERVERSIONDETECTED')
   Row LaunchCondition @('NOT NEWERVERSIONDETECTED','Уже установлена более новая версия MediaBack. / A newer version of MediaBack is already installed.')
   Row LaunchCondition @('VersionNT64','Для MediaBack требуется 64-разрядная Windows. / MediaBack requires 64-bit Windows.')
   Row CustomAction @('StopMediaBack',18,'MainExe','--quit')

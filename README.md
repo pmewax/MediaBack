@@ -8,9 +8,9 @@
 
 A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it up once, close the settings, and keep your music controls within reach.
 
-### [↓ Скачать / Download 0.4.2 beta · Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.2-beta/MediaBack-Setup.msi)
+### [↓ Скачать / Download 0.4.3 beta · Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.3-beta/MediaBack-Setup.msi)
 
-[Код / Source](source) · [Сборка / Build](README.txt) · [Что нового / Release notes](https://github.com/pmewax/MediaBack/releases/tag/v0.4.2-beta) · [Все выпуски / All releases](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать / Support](DONATIONS.md) · [Ошибки / Issues](https://github.com/pmewax/MediaBack/issues)
+[Код / Source](source) · [Сборка / Build](README.txt) · [Что нового / Release notes](https://github.com/pmewax/MediaBack/releases/tag/v0.4.3-beta) · [Все выпуски / All releases](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать / Support](DONATIONS.md) · [Ошибки / Issues](https://github.com/pmewax/MediaBack/issues)
 
 ![MediaBack volume and media flyout](overlay-preview.png)
 
@@ -18,12 +18,12 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 
 ## Русский
 
-### Новое в 0.4.2
+### Новое в 0.4.3
 
-- **RU / EN:** мгновенная смена языка вверху бокового меню, с сохранением выбора. Переведены настройки, подсказки, трей, кадрирование и диалоги поддержки.
-- **Курсор в игре:** стрелка при наведении на панель, если игра скрыла свободный указатель. Для игр с заблокированной мышью добавлен режим **Ctrl + Alt + M**. Панель временно получает фокус; **Esc**, повторное сочетание или щелчок снаружи завершают режим.
-- **Плавный индикатор громкости:** короткое сглаживание без задержки изменения звука. При перетаскивании ползунок следует за мышью напрямую. Плавность можно выключить.
-- **Аккуратнее настройки:** все пункты бокового меню доступны при минимальном размере окна.
+- **Актуальные обложки:** исправлено изображение от предыдущего трека после переключения. Обновление картинки обрабатывается и без изменения названия песни.
+- **Надёжнее загрузка:** устаревшие чтения отменяются, а задержанная обложка проверяется повторно ограниченное число раз. Постоянного частого опроса нет.
+- **Без подсказок при наведении:** убраны с панели, настроек и диалогов. Названия кнопок для экранного диктора сохранены.
+- **Обновление с сохранением настроек:** проверен переход с 0.4.2 на 0.4.3.
 
 ### Возможности
 
@@ -40,7 +40,7 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 ### Установка и обновление
 
 1. Скачайте **MediaBack-Setup.msi** по кнопке выше. Для установки нужен MSI. Автоматические архивы GitHub **Source code** не являются установщиком; их состав зависит от тега.
-2. Запустите MSI. Для обновления с 0.4.1 используйте новый MSI: сохранение настроек проверено.
+2. Запустите MSI. Для обновления с 0.4.2 используйте новый MSI: сохранение настроек проверено.
 3. Выберите язык и внешний вид, затем закройте настройки — панель продолжит работать.
 4. Клавиша громкости или **Ctrl + Alt + V** показывает обычную панель без переключения активного окна.
 5. Для повторной настройки: **Пуск → MediaBack**. Для полной остановки: **Завершить MediaBack** в настройках.
@@ -63,13 +63,13 @@ A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it u
 
 Плеер должен поддерживать **Windows Media Session**: одного воспроизведения звука недостаточно. Совместимость зависит от приложения; название сайта определяется не всегда. Не проверены все гарнитуры, регуляторы, конфигурации мониторов и игры. Это бета-версия.
 
-MSI **не подписан сертификатом издателя**. Windows может показать предупреждение: проверяйте источник и SHA-256 из релиза, не отключайте защиту Windows. 169 автоматических проверок прошли; Microsoft Defender не обнаружил угроз в финальном MSI. Это не заменяет независимый аудит. [Проверки и ограничения](SECURITY.md).
+MSI **не подписан сертификатом издателя**. Windows может показать предупреждение: проверяйте источник и SHA-256 из релиза, не отключайте защиту Windows. 26 новых проверок прошли. Общий прогон: 190 успешных проверок и 5 сбоев тестов фокуса, которые повторились на неизменённой 0.4.2 в этой среде; Microsoft Defender не обнаружил угроз в финальном MSI. Это не заменяет независимый аудит. [Проверки и ограничения](SECURITY.md).
 
 Приложение работает локально, без учётной записи, рекламы, телеметрии и передачи музыки на сервер. Использует Windows Media Session и Core Audio. [Приватность](PRIVACY.md). Программа использует память и процессорное время; нулевая нагрузка не обещается.
 
 ### Исходники и проверка
 
-Код версии 0.4.2 доступен для изучения прямо в [source](source). [Инструкция по сборке](README.txt), [результаты проверок](VALIDATION.txt) и [контрольные суммы исходного комплекта](SHA256-SOURCE.txt) находятся в корне репозитория.
+Код версии 0.4.3 доступен для изучения прямо в [source](source). [Инструкция по сборке](README.txt), [результаты проверок](VALIDATION.txt) и [контрольные суммы исходного комплекта](SHA256-SOURCE.txt) находятся в корне репозитория.
 
 Для сборки нужны Windows x64 и .NET SDK 10.0.401 или совместимая версия .NET 10. Из корня репозитория запустите `./build.ps1` в PowerShell. Скрипт собирает приложение и MSI; установка автоматически не запускается.
 
@@ -81,12 +81,12 @@ MSI **не подписан сертификатом издателя**. Windows
 
 ## English
 
-### What's new in 0.4.2
+### What's new in 0.4.3
 
-- **RU / EN:** switch languages instantly at the top of the sidebar; your choice is saved. Settings, tooltips, tray menus, cropping and support dialogs are translated.
-- **In-game cursor:** an arrow appears over the flyout when a game hides a freely moving pointer. For games that lock the mouse, **Ctrl + Alt + M** temporarily activates the panel. **Esc**, the same shortcut or an outside click ends interaction mode.
-- **Smoother volume indicator:** a short visual transition with immediate audio changes. Direct slider dragging stays responsive. Smoothing can be disabled.
-- **Settings layout:** all sidebar entries remain accessible at the minimum window size.
+- **Current track artwork:** fixed previous-track images after skipping, including artwork updates without a title change.
+- **More reliable loading:** obsolete reads are cancelled and delayed thumbnails receive a limited number of retries, without continuous fast polling.
+- **No hover tooltips:** removed from the flyout, settings and dialogs; accessibility names are retained.
+- **Settings preserved:** the 0.4.2 → 0.4.3 upgrade has been tested.
 
 ### Features
 
@@ -103,7 +103,7 @@ MSI **не подписан сертификатом издателя**. Windows
 ### Install or update
 
 1. Download **MediaBack-Setup.msi** using the link above. GitHub's automatic **Source code** archives are not installers; their contents depend on the tag. Use the MSI to install.
-2. Run the MSI. Updating from 0.4.1 with existing settings has been tested.
+2. Run the MSI. Updating from 0.4.2 with existing settings has been tested.
 3. Choose **English · EN** at the top of the sidebar and customize the flyout. Closing settings keeps MediaBack running.
 4. Press a volume key or **Ctrl + Alt + V** to show the regular flyout without changing the active window.
 5. Reopen **Start → MediaBack** to configure it later. Use **Quit MediaBack** in settings to stop it completely.
@@ -126,13 +126,13 @@ Uninstalling stops the app and removes its program files, shortcuts and startup 
 
 Requires **Windows 11 x64** and a player supporting **Windows Media Session**. Audio playback alone does not provide a controllable session. Website identification is not always possible. Not every headset, hardware dial, monitor configuration or game has been tested. This is a beta release.
 
-The MSI is **not digitally signed by a publisher certificate**. Windows may show a warning. Check the download source and release SHA-256; do not disable Windows protection. 169 automated checks passed and Microsoft Defender found no threats in the final MSI. This is not an independent security audit. [Checks and limitations](SECURITY.md).
+The MSI is **not digitally signed by a publisher certificate**. Windows may show a warning. Check the download source and release SHA-256; do not disable Windows protection. All 26 new checks passed. The full run had 190 passes and 5 focus-test failures, also reproduced on unchanged 0.4.2 in this environment. Microsoft Defender found no threats in the final MSI. This is not an independent security audit. [Checks and limitations](SECURITY.md).
 
 MediaBack works locally without an account, ads, telemetry or uploading music. It uses Windows Media Session and Core Audio. [Privacy](PRIVACY.md). It uses memory and CPU time; zero resource usage is not promised.
 
 ### Source and verification
 
-Browse the 0.4.2 application code in [source](source). The repository includes [build instructions](README.txt), [verification results](VALIDATION.txt) and [source-package file hashes](SHA256-SOURCE.txt).
+Browse the 0.4.3 application code in [source](source). The repository includes [build instructions](README.txt), [verification results](VALIDATION.txt) and [source-package file hashes](SHA256-SOURCE.txt).
 
 Build on Windows x64 with .NET SDK 10.0.401 or a compatible .NET 10 version. Run `./build.ps1` from the repository root in PowerShell. It builds the app and MSI without automatically installing them.
 
