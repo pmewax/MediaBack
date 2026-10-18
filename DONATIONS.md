@@ -15,3 +15,8 @@
 
 Перед переводом проверьте монету и сеть. Один адрес в разных сетях не делает эти сети взаимозаменяемыми.
 
+## ♡ Support the author
+
+All MediaBack features are free. Donations are optional and help support development. Thank you for your feedback and ideas!
+
+The table above lists the public receiving addresses: native TRX on Tron, and USDT on Ethereum (ERC-20), Tron (TRC-20), Solana (SPL), Polygon and BNB Smart Chain (BEP-20). Choose the correct coin and network before sending; networks are not interchangeable. The same addresses and QR codes are available in the application's settings.

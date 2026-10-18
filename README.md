@@ -2,65 +2,132 @@
 
 # MediaBack
 
-**Громкость и музыка снова под рукой.** Бесплатная панель для Windows 11 в духе Windows 10: переключайте треки, меняйте громкость и настройте внешний вид под себя.
+**Громкость и музыка снова под рукой. / Your volume and music, back within reach.**
 
-**Your volume and music, back within reach.** A free Windows 10-style volume and media flyout for **Windows 11 x64**. Control compatible media players, switch tracks without leaving a borderless game, and customize the position, themes, background and hotkeys. Close the settings and MediaBack keeps running in the background, with an optional tray icon. Requires a player that supports Windows Media Session; exclusive fullscreen support is limited.
+Бесплатная панель громкости и музыки в стиле Windows 10 для **Windows 11 x64**. Настройте один раз — панель продолжит работать в фоне после закрытия настроек.
 
-### [↓ Скачать / Download MediaBack 0.4.1 beta — Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.1-beta/MediaBack-Setup.msi)
+A free Windows 10-style volume and media flyout for **Windows 11 x64**. Set it up once, close the settings, and keep your music controls within reach.
 
-[Все выпуски](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать автора](DONATIONS.md) · [Сообщить об ошибке](https://github.com/pmewax/MediaBack/issues)
+### [↓ Скачать / Download 0.4.2 beta · Windows 11 x64 · MSI](https://github.com/pmewax/MediaBack/releases/download/v0.4.2-beta/MediaBack-Setup.msi)
 
-![Панель громкости и музыки](overlay-preview.png)
+[Что нового / Release notes](https://github.com/pmewax/MediaBack/releases/tag/v0.4.2-beta) · [Все выпуски / All releases](https://github.com/pmewax/MediaBack/releases) · [♡ Поддержать / Support](DONATIONS.md) · [Ошибки / Issues](https://github.com/pmewax/MediaBack/issues)
 
-## Что умеет
+![MediaBack volume and media flyout](overlay-preview.png)
 
-- Показывает трек, исполнителя, обложку и кнопки плеера из Windows Media Session.
-- Позволяет закрепить музыкальный источник, чтобы игра не забирала управление.
-- Появляется по клавишам громкости и поддерживаемым аппаратным регуляторам. Изменение ползунка в микшере Windows не вызывает панель.
-- Настраивает положение, монитор, масштаб, цвет, прозрачность, собственный фон и плавное скрытие.
-- Поддерживает собственные глобальные сочетания и выключатель каждой команды.
-- Работает после закрытия настроек, в том числе без значка в трее.
-- Показывает название сайта у браузерного источника, когда его удаётся определить. Функцию можно выключить.
+[Русский](#русский) · [English](#english)
 
-![Настройки MediaBack](settings-preview.png)
+## Русский
 
-## Установка и использование
+### Новое в 0.4.2
 
-1. Скачайте **MediaBack-Setup.msi** по кнопке выше. Автоматические архивы GitHub «Source code» содержат только материалы этой страницы.
-2. Откройте MSI, настройте панель и закройте настройки: MediaBack продолжит работать в фоне.
-3. Нажмите клавишу громкости или **Ctrl + Alt + V**, чтобы показать панель. Сочетания меняются в разделе «Управление».
-4. Для повторной настройки запустите **Пуск → MediaBack**. Кнопка «Завершить MediaBack» полностью останавливает программу.
+- **RU / EN:** мгновенная смена языка вверху бокового меню, с сохранением выбора. Переведены настройки, подсказки, трей, кадрирование и диалоги поддержки.
+- **Курсор в игре:** стрелка при наведении на панель, если игра скрыла свободный указатель. Для игр с заблокированной мышью добавлен режим **Ctrl + Alt + M**. Панель временно получает фокус; **Esc**, повторное сочетание или щелчок снаружи завершают режим.
+- **Плавный индикатор громкости:** короткое сглаживание без задержки изменения звука. При перетаскивании ползунок следует за мышью напрямую. Плавность можно выключить.
+- **Аккуратнее настройки:** все пункты бокового меню доступны при минимальном размере окна.
 
-Установка для текущего пользователя: `%LOCALAPPDATA%\Programs\MediaBack`. .NET включён в пакет. MSI добавляет автозапуск при входе в Windows; его можно выключить в настройках приложения или Windows. Настройки сохраняются автоматически.
+### Возможности
 
-## Как вернуть стандартную панель Windows 11
+- Трек, исполнитель, обложка и кнопки управления из Windows Media Session.
+- Закрепление музыкального источника, чтобы игра не перехватывала управление плеером.
+- Показ по клавишам громкости и поддерживаемым аппаратным регуляторам. Ползунок микшера Windows не вызывает панель.
+- Положение, монитор, масштаб, темы, акцент, прозрачность, собственный фон с кадрированием и плавное скрытие.
+- Свои глобальные сочетания, выключатель всех быстрых команд и каждой команды отдельно.
+- Работа в фоне, автозапуск и необязательный значок в трее.
+- Название сайта у браузерного источника, когда его удаётся определить; отображение можно отключить.
+
+![Настройки MediaBack на русском](settings-preview.png)
+
+### Установка и обновление
+
+1. Скачайте **MediaBack-Setup.msi** по кнопке выше. Архивы GitHub **Source code** содержат материалы репозитория, а не приложение.
+2. Запустите MSI. Для обновления с 0.4.1 используйте новый MSI: сохранение настроек проверено.
+3. Выберите язык и внешний вид, затем закройте настройки — панель продолжит работать.
+4. Клавиша громкости или **Ctrl + Alt + V** показывает обычную панель без переключения активного окна.
+5. Для повторной настройки: **Пуск → MediaBack**. Для полной остановки: **Завершить MediaBack** в настройках.
+
+Установка для текущего пользователя: `%LOCALAPPDATA%\Programs\MediaBack`. .NET включён в пакет. MSI добавляет автозапуск при входе в Windows; его можно выключить в приложении или Windows. Настройки сохраняются автоматически. Обновления скачиваются вручную из [Releases](https://github.com/pmewax/MediaBack/releases).
+
+### Если игра скрыла курсор
+
+Если указатель свободно двигается, наведите его на панель. Если игра удерживает мышь, нажмите **Ctrl + Alt + M**, переключите трек и нажмите **Esc**, чтобы вернуться к игре. Сочетания меняются или отключаются в **Управление → Быстрые команды**. Курсор и сглаживание настраиваются в **Управление → Курсор и игры**.
+
+Используйте оконный режим или без рамки. Поведение зависит от игры: режим проверен с тестовым окном со скрытым курсором; прямая проверка в Roblox не проводилась. Эксклюзивный полный экран и защищённые окна могут ограничивать работу панели. Приложение не внедряется в игры.
+
+### Как вернуть стандартную панель Windows 11
 
 **Параметры → Приложения → Установленные приложения → MediaBack → Удалить**, либо **Пуск → MediaBack → Удалить MediaBack**.
 
-Удаление завершает процесс и убирает приложение, ярлыки и автозапуск. MediaBack не заменяет системные файлы Windows: стандартная обработка клавиш возвращается после завершения приложения. Пользовательские настройки и фоны остаются в `%LOCALAPPDATA%\MediaBack`; при необходимости удалите эту папку отдельно.
+Удаление останавливает приложение и убирает его файлы, ярлыки и автозапуск. Системные файлы Windows не заменяются: стандартная обработка клавиш возвращается после завершения MediaBack. Настройки и фоны остаются в `%LOCALAPPDATA%\MediaBack`; при необходимости удалите эту папку отдельно.
 
-## Совместимость и ограничения бета-версии
+### Совместимость, безопасность и приватность
 
-Windows 11 **x64**. Плеер должен предоставлять Windows Media Session: один лишь звук не означает наличие управляемой медиасессии. Совместимость зависит от приложения и его настроек. Название сайта у фоновой вкладки определяется не всегда.
+Плеер должен поддерживать **Windows Media Session**: одного воспроизведения звука недостаточно. Совместимость зависит от приложения; название сайта определяется не всегда. Не проверены все гарнитуры, регуляторы, конфигурации мониторов и игры. Это бета-версия.
 
-Для игр рекомендуется оконный режим без рамки. Эксклюзивный полный экран, защищённые окна и некоторые драйверы устройств могут ограничивать показ панели или перехват медиаклавиш. Все модели гарнитур и регуляторов не проверены.
+MSI **не подписан сертификатом издателя**. Windows может показать предупреждение: проверяйте источник и SHA-256 из релиза, не отключайте защиту Windows. 169 автоматических проверок прошли; Microsoft Defender не обнаружил угроз в финальном MSI. Это не заменяет независимый аудит. [Проверки и ограничения](SECURITY.md).
 
-Программа потребляет память и процессорное время; нулевая нагрузка не обещается. Обновления скачиваются вручную из [Releases](https://github.com/pmewax/MediaBack/releases).
+Приложение работает локально, без учётной записи, рекламы, телеметрии и передачи музыки на сервер. Использует Windows Media Session и Core Audio. [Приватность](PRIVACY.md). Программа использует память и процессорное время; нулевая нагрузка не обещается.
 
-## Безопасность и приватность
+### ♡ Поддержать автора
 
-MSI **пока не имеет цифровой подписи издателя**; Windows может показать предупреждение о неизвестном издателе. Проверяйте источник и контрольную сумму из релиза. Не отключайте защиту Windows ради установки.
+Все функции бесплатны. Если MediaBack помогает каждый день, можно поддержать развитие добровольным донатом: **[монеты, сети и адреса →](DONATIONS.md)**. Те же адреса и QR доступны в настройках. Спасибо за поддержку, идеи и отзывы!
 
-Приложение работает локально: нет учётной записи, рекламы, телеметрии или загрузки музыки на сервер. Для панели используются Windows Media Session и Core Audio. [Подробнее о данных](PRIVACY.md) · [Проверки и ограничения](SECURITY.md).
+## English
 
-## ♡ Поддержать автора
+### What's new in 0.4.2
 
-Все функции бесплатны. Если MediaBack помогает каждый день, можно поддержать развитие добровольным донатом: **[монеты, сети и адреса →](DONATIONS.md)**. Те же адреса и QR доступны в настройках.
+- **RU / EN:** switch languages instantly at the top of the sidebar; your choice is saved. Settings, tooltips, tray menus, cropping and support dialogs are translated.
+- **In-game cursor:** an arrow appears over the flyout when a game hides a freely moving pointer. For games that lock the mouse, **Ctrl + Alt + M** temporarily activates the panel. **Esc**, the same shortcut or an outside click ends interaction mode.
+- **Smoother volume indicator:** a short visual transition with immediate audio changes. Direct slider dragging stays responsive. Smoothing can be disabled.
+- **Settings layout:** all sidebar entries remain accessible at the minimum window size.
 
-Спасибо за поддержку, идеи и сообщения об ошибках!
+### Features
 
-## Автор и права
+- Track title, artist, artwork and playback controls through Windows Media Session.
+- Pin a music source so another media session does not take over your controls.
+- Show the flyout using volume keys and supported hardware controls; the Windows volume mixer does not trigger it.
+- Customize position, monitor, scale, theme, accent, opacity, a cropped background image and fade-out.
+- Assign global shortcuts, enable or disable each command, or disable all quick commands.
+- Run in the background with optional startup and tray icon.
+- Display the website name for browser media when it can be identified; this is optional.
 
-Автор: [pmewax](https://github.com/pmewax). MediaBack распространяется как бесплатное приложение с закрытыми исходниками. Этот репозиторий содержит описание, изображения и установочные выпуски; исходного кода приложения здесь нет.
+![MediaBack settings in English](settings-en.png)
 
-[Условия использования](LICENSE.txt) · [Лицензии сторонних компонентов](THIRD-PARTY-NOTICES.txt). Неофициальный проект, не связан с Microsoft, Spotify, SoundCloud или другими упомянутыми сервисами. Изображения интерфейса используют демонстрационные данные.
+### Install or update
+
+1. Download **MediaBack-Setup.msi** using the link above. GitHub's automatic **Source code** archives contain repository materials, not the application.
+2. Run the MSI. Updating from 0.4.1 with existing settings has been tested.
+3. Choose **English · EN** at the top of the sidebar and customize the flyout. Closing settings keeps MediaBack running.
+4. Press a volume key or **Ctrl + Alt + V** to show the regular flyout without changing the active window.
+5. Reopen **Start → MediaBack** to configure it later. Use **Quit MediaBack** in settings to stop it completely.
+
+Installed for the current user in `%LOCALAPPDATA%\Programs\MediaBack`, with .NET included. The MSI enables startup at sign-in; you can disable this in MediaBack or Windows. Settings save automatically. Download updates manually from [Releases](https://github.com/pmewax/MediaBack/releases).
+
+### When a game hides the cursor
+
+If the pointer can move freely, hover over the flyout. If the game locks it, press **Ctrl + Alt + M**, use the media controls, then press **Esc** to return to the game. Change or disable bindings under **Controls → Quick commands**. Cursor and smoothing options are under **Controls → Cursor and games**.
+
+Use windowed or borderless mode. Compatibility depends on the game: interaction mode was tested with a hidden-cursor test window, not directly in Roblox. Exclusive fullscreen and protected windows can restrict the flyout. MediaBack does not inject into games.
+
+### Restore the Windows 11 flyout
+
+Uninstall through **Settings → Apps → Installed apps → MediaBack → Uninstall**, or **Start → MediaBack → Uninstall MediaBack**.
+
+Uninstalling stops the app and removes its program files, shortcuts and startup entry. Windows system files are not replaced; normal volume-key handling returns when MediaBack exits. Your settings and backgrounds remain in `%LOCALAPPDATA%\MediaBack`; remove that folder separately if desired.
+
+### Compatibility, security and privacy
+
+Requires **Windows 11 x64** and a player supporting **Windows Media Session**. Audio playback alone does not provide a controllable session. Website identification is not always possible. Not every headset, hardware dial, monitor configuration or game has been tested. This is a beta release.
+
+The MSI is **not digitally signed by a publisher certificate**. Windows may show a warning. Check the download source and release SHA-256; do not disable Windows protection. 169 automated checks passed and Microsoft Defender found no threats in the final MSI. This is not an independent security audit. [Checks and limitations](SECURITY.md).
+
+MediaBack works locally without an account, ads, telemetry or uploading music. It uses Windows Media Session and Core Audio. [Privacy](PRIVACY.md). It uses memory and CPU time; zero resource usage is not promised.
+
+### ♡ Support the author
+
+All features are free. If MediaBack makes your day a little easier, you can support its development voluntarily: **[coins, networks and addresses →](DONATIONS.md)**. The same addresses and QR codes are available in settings. Thank you for your support, ideas and feedback!
+
+## Автор и права / Author and rights
+
+By [pmewax](https://github.com/pmewax). Бесплатное приложение с закрытыми исходниками / freeware with closed source. This repository contains documentation, screenshots and installable releases; the application's source code is not included.
+
+[Условия / License](LICENSE.txt) · [Сторонние компоненты / Third-party notices](THIRD-PARTY-NOTICES.txt). Неофициальный проект / an unofficial project, not affiliated with Microsoft, Spotify, SoundCloud or other mentioned services. Screenshots use demonstration data.
